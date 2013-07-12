@@ -11,8 +11,7 @@ case class Time(hours: Int = 0, minutes: Int = 0) {
   //TODO: Verify that hours is within 0 and 23
   require(hours >= 0 && hours < 24)
   //TODO: Verify that minutes is within 0 and 59
-
-  println("asMinutes - " + asMinutes)
+  require(minutes >= 0 && minutes < 61)
 
   val asMinutes: Int = hours * 60 + minutes
 
