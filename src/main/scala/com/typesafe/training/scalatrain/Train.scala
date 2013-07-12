@@ -7,6 +7,6 @@ package com.typesafe.training.scalatrain
  * com.typesafe.training.scalatrain.Time: 10:48
  * To change this template use File | Settings | File Templates.
  */
-class Train(val number: Int, val kind: String) {
+case class Train(number: Int, kind: String) {
   println("kind - " + kind + ", number - " + number)
 }

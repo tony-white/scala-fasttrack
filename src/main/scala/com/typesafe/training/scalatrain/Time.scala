@@ -7,7 +7,7 @@ package com.typesafe.training.scalatrain
  * com.typesafe.training.scalatrain.Time: 11:48
  * To change this template use File | Settings | File Templates.
  */
-class Time(val hours: Int = 0, val minutes: Int = 0) {
+case class Time(hours: Int = 0, minutes: Int = 0) {
   //TODO: Verify that hours is within 0 and 23
   require(hours >= 0 && hours < 24)
   //TODO: Verify that minutes is within 0 and 59
